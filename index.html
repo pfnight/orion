@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>orion</title>
+   
+   <!--Style Sheet-->
+   <link rel="icon" href="img/favicon.png"><!--favicon icon-->
+   <link rel="stylesheet" href="css/fonts.css">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/main.css">
+
+   <!--Java Script-->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+   <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+   <script src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> <!--type="text/javascript"-->
+   <script src="js/main.js"></script>
+   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+<body>
+   <div class="skip_nav"><a href="#main">본문바로가기</a></div>
+<div id="wrap">
+   <header>
+      <span class="gnb_bg"></span>
+      <span class="allmenu_bg"></span>
+      <div class="container">
+         <h1><a href="#"><img src="img/orion_logo.png" alt=""><span class="blind">오리온</span></a></h1>
+         <div class="header_util">
+            <div class="pc_lang_wrap">
+               <a href="#">KOR | ENG</a>
+               <ul>
+                  <li><a href="#">KOR</a></li>
+                  <li><a href="#">ENG</a></li>
+               </ul>
+            </div><!--//.lang_wrap-->
+            <div class="allmenu_wrap">
+               <button class="allmenu_btn"><span class="blind">전체메뉴 보기</span></button>
+               <div class="allmenu_box">
+                  <ul class="a1 clrfix">
+                     <li><a href="#">Product</a>
+                        <ul class="a2">
+                           <li><a href="#">신제품 / 리뉴얼</a></li>
+                           <li><a href="#">Chocopie House</a></li>
+                           <li class="after_arrow"><a href="#">Dr.you</a>
+                              <ul class="a3">
+                                 <li><a href="#">Dr.you Bar</a></li>
+                                 <li><a href="#">Dr.you Protein Ball</a></li>
+                                 <li><a href="#">Dr.you Drink</a></li>
+                              </ul>
+                           </li>
+                           <li class="after_arrow"><a href="#">ORION POWER BRAND</a>
+                              <ul class="a3">
+                                 <li><a href="#">Product Info</a></li>
+                                 <li><a href="#">CF</a></li>
+                              </ul>
+                           </li>
+                           <li><a href="#">Dr.you Yongamsoo</a></li>
+                        </ul> 
+                     </li>
+                     <li><a href="#">Market O</a>
+                        <ul class="a2">
+                           <li><a href="#">마켓오 제과</a></li>
+                           <li><a href="#">마켓오 네이처</a></li>
+                           <li><a href="#">마켓오 레스토랑</a></li>
+                           <li><a href="#">마켓오 네이처 카페</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">CUSTOMER</a>
+                        <ul class="a2">
+                           <li><a href="#">고객 소리(VOC)</a></li>
+                           <li><a href="#">불만 접수(Claim)</a></li>
+                           <li><a href="#">의견 접수(Idea)</a></li>
+                           <li><a href="#">신규거래 제안</a></li>
+                           <li><a href="#">자주 묻는 질문</a></li>
+                           <li><a href="#">영업소 위치</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">COMPANY</a>
+                        <ul class="a2">
+                           <li><a href="#">오리온 소개</a></li>
+                           <li><a href="#">오리온 역사관</a></li>
+                           <li><a href="#">오리온 사업영역</a></li>
+                           <li><a href="#">IR정보</a></li>
+                           <li><a href="#">PR정보</a></li>
+                           <li><a href="#">채용 공고</a></li>
+                           <li><a href="#">오시는 길</a></li>
+                        </ul>
+                     </li>
+                  </ul>
+                  <div class="allmenu_sns clrfix">
+                     <a href="#"><img src="img/sns_facebook.png" alt=""></a>
+                     <a href="#"><img src="img/sns_insta.png" alt=""></a>
+                     <a href="#"><img src="img/sns_youtube.png" alt=""></a>
+                  </div>
+                  <div class="allmenu_familysite">
+                     <button>Family Site</button>
+                  </div>
+               </div><!--//.allmenu_box-->
+            </div><!--//.allmenu_wrap-->
+         </div><!--.header_util-->
+         <nav id="gnb" class="pc_gnb">
+            <ul class="g1 clrfix">
+               <li><a href="#">제품소개</a>
+                  <ul class="g2 clrfix">
+                     <li><a href="#">신제품 / 리뉴얼</a></li>
+                     <li><a href="#">Chocopie House</a></li>
+                     <li><a href="#">Dr.you</a>
+                        <ul class="g3">
+                           <li><a href="#">Dr.you Bar</a></li>
+                           <li><a href="#">Dr.you Protein Ball</a></li>
+                           <li><a href="#">Dr.you Drink</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">ORION POWER BRAND</a>
+                        <ul class="g3">
+                           <li><a href="#">Product Info</a></li>
+                           <li><a href="#">CF</a></li>
+                        </ul>
+                     </li>
+                     <li><a href="#">Dr.you Yongamsoo</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">마켓오</a>
+                  <ul class="g2">
+                     <li><a href="#">마켓오 제과</a></li>
+                     <li><a href="#">마켓오 네이처</a></li>
+                     <li><a href="#">마켓오 레스토랑</a></li>
+                     <li><a href="#">마켓오 네이처 카페</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">고객센터</a>
+                  <ul class="g2">
+                     <li><a href="#">고객 소리(VOC)</a></li>
+                     <li><a href="#">불만 접수(Claim)</a></li>
+                     <li><a href="#">의견 접수(Idea)</a></li>
+                     <li><a href="#">신규거래 제안</a></li>
+                     <li><a href="#">자주 묻는 질문</a></li>
+                     <li><a href="#">영업소 위치</a></li>
+                  </ul>
+               </li>
+               <li><a href="#">회사소개</a>
+                  <ul class="g2">
+                     <li><a href="#">오리온 소개</a></li>
+                     <li><a href="#">오리온 역사관</a></li>
+                     <li><a href="#">오리온 사업영역</a></li>
+                     <li><a href="#">IR정보</a></li>
+                     <li><a href="#">PR정보</a></li>
+                     <li><a href="#">채용 공고</a></li>
+                     <li><a href="#">오시는 길</a></li>
+                  </ul>
+               </li>
+            </ul>
+         </nav>
+      </div><!--//.container-->
+   </header>
+   <main id="main">
+      <div class="visual_wrap">
+         <div class="vis_slider">
+            <ul>
+               <li class="vis_1">
+                  <a href="#"><span class="blind">오그래놀라</span></a>
+               </li>
+               <li class="vis_2">
+                  <a href="#"><span class="blind">톡핑</span></a>
+               </li>
+               <li class="vis_3">
+                  <a href="#"><span class="blind">단백질볼</span></a>
+               </li>
+            </ul>
+         </div><!--//.vis_slider-->
+         <div class="vis_btns"></div>
+         <div class="vis_arrow"></div>
+      </div><!--//.visual_wrap-->
+      <div class="icon_wrap">
+         <div class="container">
+            <ul class="clrfix">
+               <li class="ico"><a href="#">
+                  <img src="img/icon_ico_1.png" alt="오리온 고객센터">
+                  <span>오리온<br>고객센터</span>
+               </a></li>
+               <li class="pc_ico"><a href="#">
+                  <img src="img/icon_ico_2.png" alt="고객문의">
+                  <span>고객문의</span>
+               </a></li>
+               <li class="ico"><a href="#">
+                  <img src="img/icon_ico_3.png" alt="신규거래제안">
+                  <span>신규거래제안</span>
+               </a></li>
+               <li class="ico"><a href="#">
+                  <img src="img/icon_ico_4.png"  alt="IR정보">
+                  <span>IR정보</span>
+               </a></li>
+               <li class="pc_ico"><a href="#">
+                  <img src="img/icon_ico_5.png" alt="PR정보">
+                  <span>PR정보</span>
+               </a></li>
+            </ul>
+         </div><!--//.container-->
+      </div><!--//.icon_wrap-->
+      <div class="brand_wrap">
+         <div class="container clrfix">
+            <h2>제품소개</h2>
+            <div class="mo_logo_btns clrfix">
+               <button class="b1 on">Market O</button><button class="b2">Market O NATURE</button><button class="b3">Dr.You</button><button class="b4">Chocopie House</button>
+            </div><!--//.logo_btns-->
+            <div class="pc_logo_btns">
+               <button class="b1 on">Market O</button><button class="b2">Market O NATURE</button><button class="b3">Dr.You</button><button class="b4">New &amp; Renewal</button>
+            </div><!--//.logo_btns-->
+            <div class="brand_box">
+               <span class="tab_arrow"></span>
+               <ul class="clrfix">
+                  <li class="on">
+                     <div class="brand_1">
+                        <div class="brand_info">
+                           <a href="#">
+                              <p>"좋은 재료를 선별하여, 재료 본연의 풍미가 살아있는<br>홈메이드 스타일의 과자를 만듭니다."</p>
+                           </a>  
+                        </div><!--//.brand_info-->
+                        <div class="brand_slider">
+                           <ul class="clrfix">
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>REAL BROWNIE</strong>
+                                    <p>"진한 초콜릿 맛 그대로<br>리얼 브라우니"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_marketo_01.png" alt="리얼브라우니">
+                              </a></li>
+                              <li><a href="#">  
+                                 <div class="product">
+                                    <strong>CHOCOLATE</strong>
+                                    <p>"100% 카카오버터 리얼 초콜릿<br>오리지널 / 밀크
+                                 </div><!--//.product-->
+                                 <img src="img/brand_marketo_05.png" alt="리얼초콜릿">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>다쿠아즈</strong>
+                                    <p>"머랭 반죽에 아몬드를 더해<br>폭신한 프랑스 정통 디저트"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_marketo_04.png" alt="다쿠아즈">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong></strong>감자톡</strong>
+                                    <p>"톡! 맛있는 감자소리<br>오도독 바삭 새로운 식감"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_marketo_02.png" alt="감자톡">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>오징어톡</strong>
+                                    <p>"바다 향 가득 오징어 풍미<br>오징어톡 구운 오징어맛"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_marketo_03.png" alt="오징어톡">
+                              </a></li>
+                           </ul>
+                           <div class="brand_btns"></div><!--//.brand_btns-->
+                           <div class="brand_arrow"></div>
+                        </div><!--//.marketo_slider-->
+                     </div><!--.brand_1-->
+                  </li>
+                  <li>
+                     <div class="brand_1">
+                        <div class="brand_info">
+                           <a href="#">
+                              <p>"한끼를 한끼답게 자연원물 그대로의<br>정직하고 건강한 맛을 전합니다."</p>
+                           </a>
+                        </div><!--//.brand_info-->
+                        <div class="brand_slider">
+                           <ul class="clrfix">
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>오! 그래놀라<br>과일</strong>
+                                    <p>"통곡물 그래놀라 92%에<br>큼직한 4가지 과일이 듬뿍!"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_nature_01.png" alt="오! 그래놀라 과일">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>오! 그래놀라<br>검은콩</strong>
+                                    <p>"통곡물 그래놀라 99%에<br>국산콩 3가지가 듬뿍!"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_nature_02.png" alt="오! 그래놀라 검은콩">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>오! 그래놀라<br>단호박</strong>
+                                    <p>"통곡물 그래놀라 94%에<br>큼직한 단호박과 고구마 듬뿍!"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_nature_03.png" alt="오! 그래놀라 단호박">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>오! 그래놀라바<br>카카오</strong>
+                                    <p>"깊은 카카오 풍미와 <br>콕콕 박혀있는 유산균볼!"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_nature_04.png" alt="오! 그래놀라바 카카오">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>오! 그래놀라바<br>단호박고구마</strong>
+                                    <p>"통곡물 그래놀라 94%에<br>큼직한 단호박과 고구마 듬뿍!"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_nature_05.png" alt="오! 그래놀라바 단호박고구마">
+                              </a></li>
+                           </ul>
+                        </div><!--//.nature_slider pc_sld-->
+                        <div class="brand_btns"></div><!--//.brand_btns-->
+                     </div><!--//.brand_2-->
+                  </li>
+                  <li>
+                     <div class="brand_1">
+                        <div class="brand_info">
+                           <a href="#">
+                              <p>"바쁜 현대인의 영양 밸런스를 생각하는<br>오리온의 대표 뉴트리션 브랜드"</p>
+                           </a>
+                        </div><!--//.brand_info-->
+                        <div class="brand_slider">
+                           <ul class="clrfix">
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>Dr.You<br>에너지바</strong>
+                                    <p>"오래 지속되는 에너지를 위한<br>닥터유만의 영양설계"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_dryou_01.png" alt="닥터유 에너지바">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>Dr.You<br>단백질볼</strong>
+                                    <p>"언제 어디서나 맛있는 단백질 충전!<br>통아몬드 단백질 초코볼"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_dryou_02.png" alt="닥터유 단백질볼">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>Dr.You<br>단백질 드링크</strong>
+                                    <p>"당신에게 꼭 필요한 영양을!<br>건강하고 맛있게 챙기세요"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_dryou_03.png" alt="닥터유 단백질 드링크">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>Dr.You<br>구미</strong>
+                                    <p>"씹을수록 더 쫄깃한<br>맛있는 영양구미"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_dryou_04.png" alt="닥터유 구미">
+                              </a></li>
+                           </ul>
+                        </div><!--//.dryou_slider pc_sld-->
+                        <div class="brand_btns"></div><!--//.brand_btns-->
+                     </div><!--//.brand_3-->
+                  </li>
+                  <li>
+                     <div class="brand_1">
+                        <div class="brand_info">
+                           <a href="#">
+                              <p>"오랜 기간 사랑받은 글로벌 간식 오리온,<br>더욱 맛있는 제품으로 보답하기 위해 새롭게 태어납니다."</p>
+                           </a>
+                        </div><!--//.brand_info-->
+                        <div class="brand_slider">
+                           <ul class="clrfix">
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>대왕 오!감자<br>찍먹 크리미칠리소스맛</strong>
+                                    <p>"두배 커지 대왕 크기로<br>매콤한 크리미칠리소스에 찍먹!"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_new_01.png" alt="대왕 오감자 찍먹 크리미칠리소스맛">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>꿀버터 오!구마</strong>
+                                    <p>"구운 고구마에 꿀버터 한 스푼!<br>달콤하게 코팅해 더 빠삭한 식감!"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_new_02.png" alt="꿀버터 오구마">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>오리온 톡핑</strong>
+                                    <p>다채로운 토핑이 톡!<br>한 조각에도 풍부한 맛과 식감!</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_new_03.png" alt="톡핑">
+                              </a></li>
+                              <li><a href="#">
+                                 <div class="product">
+                                    <strong>오리온 콰삭칩</strong>
+                                    <p>"포카칩의 새로운 식감 제안,<br>콰삭! 짜릿! 콰삭칩"</p>
+                                 </div><!--//.product-->
+                                 <img src="img/brand_new_04.png" alt="오리온 콰삭칩">
+                              </a></li>
+                           </ul>
+                        </div><!--//.chouse_slider pc_sld-->
+                     </div><!--//.brand_4-->
+                  </li>
+               </ul>
+            </div><!--//.brand_box-->
+         </div><!--//.container-->
+      </div><!--//.brand_wrap-->
+      <div class="yongam_wrap">         
+         <div class="yongam_bg clrfix">
+            <h2><a href="#"><img src="img/yongamsoo_logo.png" alt="닥터유 용암수"><span class="blind">닥터유 용암수</span></a></h2>
+            <div class="yong_box">
+               <div class="pc_yong_img"><img src="img/yong_main_11.png" alt="닥터유 면역수"></div>
+               <div class="yong_slide_box">
+                  <img src="img/yong_txt.png" alt="경도가 좋은 물의 기준" class="yong_txt">
+                  <div class="yong_slider">
+                     <div class="yong1"><a href="#"><img src="img/yong_slider_11.png" alt=""></a></div>
+                     <div class="yong2"><a href="#"><img src="img/yong_slider_12.png" alt=""></a></div>
+                     <div class="yong3"><a href="#"><img src="img/yong_slider_13.png" alt=""></a></div>
+                     <div class="yong4"><a href="#"><img src="img/yong_slider_14.png" alt=""></a></div>
+                  </div>
+               </div>
+            </div>
+            <div class="yong_more_btn">
+               <button><img src="img/yong_btn.png" alt="용암수더보기"></button>
+            </div>
+         </div><!--//.yongam_bg-->
+      </div><!--//.yongam_wrap-->
+      <div class="news_wrap">
+         <div class="container clrfix">
+            <div class="news_prod_box">
+               <h2>e - 프레스룸</h2>
+               <div class="pc_news_prod">
+                  <strong>"고객의 관심과 사랑으로 <br>성장해 온 오리온"</strong><p>새롭게 변화하는 오리온의 <br>눈부신 행보를 지켜봐 주십시오</p>
+               </div>
+            </div>
+            <div class="news_slider">
+               <ul class="clrfix">
+                  <li><a href="#">
+                     <img src="img/blank.png" alt="" class="n1">
+                     <strong>오리온, 타블릿 캔디 '마켓오 민티' 2종 출시</strong>
+                  </a></li>
+                  <li><a href="#">
+                     <img src="img/blank.png" alt="" class="n2">
+                     <strong>오리온 '닥터유 면역수', 현대그린푸드 '그리팅'과 협업</strong>
+                  </a></li>
+                  <li><a href="#">
+                     <img src="img/blank.png" alt="" class="n3">
+                     <strong>오리온, '대리점 동반성장 상생펀드' 운영...상생협력 활동 강화</strong>
+                  </a></li>
+                  <li><a href="#">
+                     <img src="img/blank.png" alt="" class="n4">
+                     <strong>오리온, '2022 제과업계 글로벌 Top 100' 12위 등극!
+                           아시아 제과기업 중 가장 높은 순위 올라</strong>
+                  </a></li>
+                  <li><a href="#">
+                     <img src="img/blank.png" alt="" class="n5">
+                     <strong>오리온 "제과업계 매출 세계 12위…아시아 1위"</strong>
+                  </a></li>
+                  <li><a href="#">
+                     <img src="img/blank.png" alt="" class="n6">
+                     <strong>㈜오리온홀딩스, 글로벌 백신 전문기업 ㈜큐라티스와
+                           '백신 공동개발 계약' 체결</strong>
+                  </a></li>
+               </ul>
+            </div>
+         </div><!--//.container-->
+      </div><!--//.news_wrap-->
+      <div class="global_wrap">
+         <h2>오리온 글로벌 사업</h2>
+         <div class="inner">
+            <div class="slider_box">                    
+               <div class="gslide">
+                  <a href="#">
+                     <img src="img/global_hochiminh.jpg" alt="베트남 호치민">
+                     <div class="global_txt">
+                        <em>베트남</em><strong>호치민</strong><p>"베트남의 국민 제과 기업으로 우뚝 선 오리온 <br>이제 동남아 시장으로 눈을 돌립니다."</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="gslide">
+                  <a href="#">
+                     <img src="img/global_shanghai.jpg" alt="중국 상하이">
+                     <div class="global_txt">
+                        <em>중국</em><strong>상하이</strong><p>"국내 시장을 벗어나 세계로 향하는 '오리온 로드'는 <br>중국에서부터 시작됩니다"</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="gslide">
+                  <a href="#">
+                     <img src="img/global_guangzhou.jpg" alt="중국 광저우">
+                     <div class="global_txt">
+                        <em>중국</em><strong>광저우</strong><p>"2010년 중국 최대 규모의 <br>광저우 공장을 완공했습니다."</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="gslide">
+                  <a href="#">
+                     <img src="img/global_russia_1.jpg" alt="러시아 뜨베리">
+                     <div class="global_txt">
+                        <em>러시아</em><strong>뜨베리</strong><p>"러시아 시장에서의 성공을 교두보로 <br>유럽 시장으로 진출해 갈 것입니다"</p>
+                     </div>
+                  </a>
+               </div>
+               <div class="gslide">
+                  <a href="#">
+                     <img src="img/global_russia_2.jpg" alt="러시아 노보에">
+                     <div class="global_txt">
+                        <em>러시아</em><strong>노보에</strong><p>"러시아 국민 간식으로 자리잡은 초코파이로 <br>현지 소비자들의 사랑을 받는 기업으로 자리매김하고 있습니다"</p>
+                     </div>
+                  </a>
+               </div>
+            </div><!--//.slider_box-->
+         </div><!--//.inner-->
+         <div class="global_btns clrfix"></div><!--//.global_btns-->
+         <div class="global_arrow"></div>
+      </div><!--//.global_wrap-->
+      <div class="sns_wrap">
+         <div class="container clrfix">
+            <h2>오리온 SNS</h2>
+            <div class="sns_slider">
+               <div class="sns_title">
+                  <strong>instagram</strong>
+                  <button class="more_sns">MORE +</button>
+               </div>
+               <div class="sns_arrow"></div>
+               <ul class="clrfix">
+                  <li><a href="#">
+                     <img src="img/sns_1.png" alt="대왕 오감자 찍먹 크리미칠리소스맛">
+                     <div class="sns_txt">
+                        <em>orion_world</em><p>왕 크고 왕 맛있어서 왕 좋아! 2배 커진 오!감자, 대왕 오!감자 찍먹 등장!</p>
+                     </div>  
+                  </a></li>
+                  <li><a href="#">
+                     <img src="img/sns_2.png" alt="닥터유 면역수 신상 선발대 모집">
+                     <div class="sns_txt">
+                        <em>orion_world</em><p>물 마시듯 채우는 정상적인 면역기능! 아연 5mg을 함유한 닥터유 면역수의 탄생!</p>
+                     </div>
+                  </a></li>
+                  <li><a href="#">
+                     <img src="img/sns_3.png" alt="봄을 그리다 신상선발대 모집">
+                     <div class="sns_txt">
+                        <em>orion_world</em><p>오리온과 함께 그리는 2022년의 봄! 참 쉽죠~?</p>
+                     </div>
+                  </a></li>
+                  <li><a href="#">
+                     <img src="img/sns_4.png" alt="밸런타인데이 선물 추천">
+                     <div class="sns_txt">
+                        <em>orion_world</em><p>초코덕후 맞춤 선물세트 3종 등장! 달콤한 초콜릿으로 마음을 전하는 날..</p>
+                     </div>
+                  </a></li>
+                  <li><a href="#">
+                     <img src="img/sns_5.png" alt="톡핑 초콜릿 마음톡 이벤트">
+                     <div class="sns_txt">
+                        <em>orion_world</em><p>톡핑으로 내 마음을 Talk Talk! (톡톡) 다채로운 토핑이 가득한 수제 스타일 톡핑 초콜릿</p>
+                     </div>
+                  </a></li>
+               </ul>
+               <div class="sns_btns"></div>
+            </div>
+            <div class="pc_sns_video">
+               <figure>
+                  <iframe class="pc_video" src="https://www.youtube.com/embed/_MPrjWPEKY4" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><!--frameborder="0" 삭제-->
+               </figure>
+               <a href="https://www.youtube.com/embed/_MPrjWPEKY4">
+                  <img src="img/youtube_thumb.png" alt="">
+                  <span>중독적인 단짠단짠⚡돌아온 와클, 이렇게 만든다고?</span>
+               </a>
+            </div>
+         </div><!--//.container-->
+      </div><!--//.sns_wrap-->
+   </main>
+   <footer>
+      <div class="container clrfix">
+         <div class="footer_logo">
+            <img src="img/orion_logo_g.png" alt="오리온">
+         </div><!--//.footer_logo-->
+         <div class="footer_info">
+            <ul class="clrfix">
+               <li>법적고지</li>
+               <li>개인정보취급방침</li>
+               <li>이메일주소수집거부</li>
+            </ul>
+            <address>서울시 용산구 백범로 90다길 13 | 전화번호 : 02-710-6000 | <br class="mo_br">상담실 : 080-023-5700</address>
+            <p class="pc_copyright">COPYRIGHT ORION CORP.ALL RIGHT RESEVED.</p>
+         </div><!--//.footer_info-->
+         <div class="famsns">
+            <div class="familysite">
+               <button>Family Site <span></span></button>
+               <ul class="fam">
+                  <li><a href="#" target="_blank">쇼박스</a></li>
+                  <li><a href="#" target="_blank">고양 오리온 농구단</a></li>
+                  <li><a href="#" target="_blank">마켓오 레스토랑</a></li>
+                  <li><a href="#" target="_blank">마켓오 네이처 카페</a></li>
+                  <li><a href="#" target="_blank">오리온 채용</a></li>
+               </ul>
+            </div><!--//.familysite-->
+            <ul class="sns clrfix">
+               <li><a href="#" target="_blank">
+                  <img src="img/sns_facebook.png" alt="페이스북">
+               </a></li>
+               <li><a href="#" target="_blank">
+                  <img src="img/sns_insta.png" alt="인스타그램">
+               </a></li>
+               <li><a href="#" target="_blank">
+                  <img src="img/sns_youtube.png" alt="유튜브">
+               </a></li>
+            </ul>
+         </div><!--//.famsns-->
+         <p class="mo_copyright">COPYRIGHT ORION CORP.ALL RIGHT RESEVED.</p>
+      </div><!--//.container-->
+   </footer>
+</div>
+</body>
+</html>
